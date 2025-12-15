@@ -21,35 +21,16 @@ git clone https://github.com/abdmnhjs/2048.git
 cd 2048
 ```
 
-3. Create a .env file and add these environment variables :
+3. Install pygame :
 ```bash
-# Replace [stripe-secret-key] by your Stripe secret key in the sandbox, it must begin by sk_test, do not use the key for real transactions but only for testing please
-# Replace [username] and [password] with your own PostgreSQL credentials
-# You define the database name when creating the variable
-# Example: postgresql://postgres:mypassword@localhost:5432/next-app-rdv-db
-DATABASE_URL=postgresql://[username]:[password]@localhost:5432/[database-name]
-STRIPE_SECRET_KEY=[stripe-secret-key]
+pip install pygame
 ```
 
-4. Install the dependencies
+4. Run the game :
 ```bash
-npm i
+python Main.py
 ```
 
-5. Generate the prisma client
-```bash
-npx prisma generate
-```
-
-6. Apply the migrations (this will create the tables in your database according to the Prisma schema)
-```bash
-npx prisma migrate dev
-```
-
-7. Run the web server
-```bash
-npm run dev
-```
 
 
 
